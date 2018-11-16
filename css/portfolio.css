@@ -269,7 +269,7 @@ footer {
     }
     .fix-size {
         width: calc(175px*2/3);
-        height: calc(306px*2/3); 
+        height: calc(306px*2/3);
     }
     .n3rd {
         order: 2;
