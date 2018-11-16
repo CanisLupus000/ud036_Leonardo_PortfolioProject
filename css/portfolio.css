@@ -29,8 +29,7 @@ footer {
 
 header,
 footer,
-aside,
-    {
+aside {
     padding-left: 15px;
 }
 
@@ -74,7 +73,10 @@ header {
 
 #name {
     margin-bottom: 0;
-    border-block-end: 5px groove gray;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: groove grey;
 }
 
 #role {
@@ -182,7 +184,7 @@ footer {
 
 .inline-block {
     display: inline-block;
-    margin-inline-end: 5px;
+    margin-right: 5px;
 }
 
 .mute-link {
@@ -238,7 +240,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 790px) and (max-width: 1023) {
+@media only screen and (min-width: 790px) and (max-width: 1023px) {
     body,
     footer {
         max-width: 760px;
@@ -249,7 +251,8 @@ footer {
 
 @media only screen and (min-width: 1024px) {
     body,
-    footer {
+    footer,
+    .contact {
         margin-left: auto;
         margin-right: auto;
         max-width: 1078px;
