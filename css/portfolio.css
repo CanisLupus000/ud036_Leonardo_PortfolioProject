@@ -6,6 +6,10 @@ img {
     max-width: 100%;
 }
 
+.fix-size {
+    object-fit: scale-down;
+}
+
 html,
 body {
     width: 100%;
@@ -130,7 +134,11 @@ figure {
     flex-wrap: wrap;
     margin-left: auto;
     max-width: 75%;
-    max-height: 100%;
+}
+
+.article-wrap article {
+    justify-content: center;
+    margin: auto;
 }
 
 article {
@@ -139,8 +147,6 @@ article {
 
 .n1st {
     order: 1;
-    /* width: 100%;
-    height: 60% */
 }
 
 .n2nd {
@@ -153,6 +159,14 @@ article {
 
 .n4th {
     order: 4;
+}
+
+.n5th {
+    order: 5;
+}
+
+.n6th {
+    order: 6;
 }
 
 footer {
@@ -181,7 +195,7 @@ footer {
     text-shadow: 2px 2px 6px #333;
 }
 
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 387px) {
     .article-wrap article {
         max-height: 30%;
         max-width: 100%;
@@ -191,6 +205,10 @@ footer {
     }
     .big {
         font-size: 48px;
+    }
+    .img-wrap {
+        max-height: 250px;
+        overflow: hidden;
     }
     .thumbnail {
         width: 48px;
@@ -202,32 +220,80 @@ footer {
     #role {
         font-size: 0.85em;
     }
-    .main-figure img {
-        height: 150px;
-        max-height: 40%;
+}
+
+@media only screen and (min-width: 388px) and (max-width: 540px) {
+    .thumbnail {
+        width: 76px;
+        height: 76px;
+    }
+    .big {
+        font-size: 58px;
+    }
+    #name {
+        font-size: 1.5em;
+    }
+    #role {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 790px) and (max-width: 1023) {
+    body,
+    footer {
+        max-width: 760px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 760px) {
-    .big {
-        font-size: 48px;
+@media only screen and (min-width: 1024px) {
+    body,
+    footer {
+        margin-left: auto;
+        margin-right: auto;
     }
     .article-wrap {
-        justify-content: center;
+        max-width: 85%;
+        margin-left: 15px;
     }
-    .article-wrap article:first-of-type {
-        max-width: 99%;
-        max-height: 55%;
+    .article-wrap article {
+        margin-top: 0;
     }
-    .article-wrap article:not(:first-of-type) {
-        margin-top: 10px;
-        max-width: 40%;
-        max-height: 27%;
+    .main-container {
+        max-height: 69vh;
     }
-    .article-wrap article:nth-of-type(2n+3){
-        margin-left: 20px;
-        margin-right: 20px;
+    .subject-container {
+        margin-right: auto;
+    }
+    .fix-size {
+        width: calc(175px/2);
+        height: calc(306px/2);
+    }
+    .n3rd {
+        order: 2;
+    }
+    .n4th {
+        order: 3;
+    }
+    .n5th {
+        order: 4;
+    }
+    .n6th {
+        order: 5;
+    }
+    .n2nd {
+        order: 6;
+    }
+    .n1st {
+        max-width: 50%;
+        max-height: 70vh;
+    }
+    .n3rd,
+    .n4th,
+    .n5th,
+    .n6th {
+        max-height: 20vh;
+        max-width: 20%;
     }
 }
