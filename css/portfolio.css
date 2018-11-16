@@ -149,9 +149,9 @@ article {
     order: 1;
 }
 
-.n2nd {
+/* .n2nd {
     order: 2;
-}
+} */
 
 .n3rd {
     order: 3;
@@ -252,6 +252,7 @@ footer {
     footer {
         margin-left: auto;
         margin-right: auto;
+        max-width: 1078px;
     }
     .article-wrap {
         max-width: 85%;
@@ -267,8 +268,8 @@ footer {
         margin-right: auto;
     }
     .fix-size {
-        width: calc(175px/2);
-        height: calc(306px/2);
+        width: calc(175px*2/3);
+        height: calc(306px*2/3); 
     }
     .n3rd {
         order: 2;
@@ -282,11 +283,11 @@ footer {
     .n6th {
         order: 5;
     }
-    .n2nd {
+    /* .n2nd {
         order: 6;
-    }
+    } */
     .n1st {
-        max-width: 50%;
+        max-width: 47%;
         max-height: 70vh;
     }
     .n3rd,
